@@ -1,0 +1,31 @@
+IMY 210 Assignment 3 Reflection
+
+Name: Zinathi Khuboni
+Student Number: u25181302
+
+GitHub Repository:
+https://github.com/zee720/IMY210-A3-final
+
+Commands to run the project:
+
+Backend:
+docker build -t strapi-backend ./Strapi-backend
+docker run -p 1337:1337 -v strapi-data:/app/.tmp strapi-backend
+
+Frontend:
+docker build -t nuxt-frontend ./Nuxt-frontend
+docker run -p 3000:3000 nuxt-frontend
+
+Access URLs:
+Backend Admin: http://localhost:1337/admin
+Frontend: http://localhost:3000
+
+Reflection:
+
+This assignment taught me a lot about using Docker and Strapi. At first it was difficult because several parts of the setup did not work as I expected. My Strapi project kept refreshing when I tried to log in, and I also had problems with Docker ports already being used. It took time to figure out what was wrong and how to fix it.
+
+Another challenge was uploading everything to GitHub. I had authentication problems and had to create a new repository before it finally worked.
+
+Even though there were challenges, I learned how to build and run Docker containers, how Strapi works as a backend, and how it connects to a Nuxt frontend. I also learned more about using Git and GitHub for version control.
+
+The biggest lesson I learned is that debugging is an important part of development. Sometimes the problem was something small, but finding it took patience. After completing this assignment, I feel more confident working with full-stack projects and using Docker to run applications.
